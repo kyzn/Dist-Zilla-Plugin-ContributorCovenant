@@ -15,6 +15,12 @@ Add this one line to your dist.ini.
 
     [ContributorCovenant]
 
+If you want to leave a copy of Code Of Conduct in code repository,
+You can add following lines to your dist.ini as well.
+
+    [CopyFilesFromBuild]
+    copy = CODE_OF_CONDUCT.md
+
 # AUTHOR
 
 Kivanc Yazan `<kyzn at cpan.org>`

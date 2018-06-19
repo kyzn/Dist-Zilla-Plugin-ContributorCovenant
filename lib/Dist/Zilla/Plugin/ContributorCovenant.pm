@@ -17,6 +17,15 @@ Add this one line to your dist.ini.
 
   [ContributorCovenant]
 
+If you want to leave a copy of Code Of Conduct in code repository,
+You can add following lines to your dist.ini as well.
+
+  [CopyFilesFromBuild]
+  copy = CODE_OF_CONDUCT.md
+
+Note that this plugin will prune other CODE_OF_CONDUCT.md files, to
+avoid multiple CODE_OF_CONDUCT.md preventing the build.
+
 =cut
 
 use warnings;
@@ -28,6 +37,7 @@ use Dist::Zilla::File::InMemory;
 with qw/
   Dist::Zilla::Role::Plugin
   Dist::Zilla::Role::FileGatherer
+  Dist::Zilla::Role::FilePruner
   Dist::Zilla::Role::TextTemplate
   Dist::Zilla::Role::MetaProvider
 /;
@@ -65,6 +75,23 @@ sub gather_files {
       name  => 'CODE_OF_CONDUCT.md',
     })
   );
+}
+
+sub prune_files {
+  my $self = shift;
+
+  my @coc_files = grep {$_->name eq 'CODE_OF_CONDUCT.md'} @{$self->zilla->files};
+  return unless scalar @coc_files > 1;
+
+  # We will keep COC file produced by this plugin
+  foreach my $file (@coc_files){
+    my $keep = 0;
+    foreach my $source ($file->added_by){
+      $keep = 1 if $source =~ 'Dist::Zilla::Plugin::ContributorCovenant';
+    }
+    $self->zilla->prune_file($file) unless $keep;
+  }
+
 }
 
 sub contributor_covenant_template {
