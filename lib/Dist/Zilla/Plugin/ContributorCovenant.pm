@@ -194,12 +194,12 @@ the same terms as the Perl 5 programming language system itself.
 
 - This module is based heavily on L<Dist::Zilla::Plugin::Covenant>.
 
-- Covenant text is taken from https://www.contributor-covenant.org/version/1/4/code-of-conduct.md.
+- Covenant text is taken from L<https://www.contributor-covenant.org/version/1/4/code-of-conduct.md>.
 
 =head1 SEE ALSO
 
-- Contributor Covenant, https://www.contributor-covenant.org/
+- Contributor Covenant, L<https://www.contributor-covenant.org/>
 
-- VM Brasseur's "The Importance of Ecosystem" Keynote, https://archive.org/details/yatpc2018-ecosystem
+- VM Brasseur's "The Importance of Ecosystem" Keynote, L<https://archive.org/details/yatpc2018-ecosystem>
 
 =cut
