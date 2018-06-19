@@ -43,7 +43,7 @@ with qw/
 /;
 
 sub metadata {
-  return { 'x_contributor_covenant' => { 'version' => 0.01 } };
+  return { 'x_contributor_covenant' => { 'version' => 0.02 } };
 }
 
 has '+zilla' => (
