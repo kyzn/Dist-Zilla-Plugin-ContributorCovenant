@@ -187,6 +187,10 @@ __END__
 
 Kivanc Yazan C<< <kyzn at cpan.org> >>
 
+=head1 CONTRIBUTORS
+
+Joelle Maslak C<< <jmaslak at antelope.net> >>
+
 =head1 COPYRIGHT AND LICENSE
 
 This software is copyright (c) 2018 by Kivanc Yazan.

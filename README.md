@@ -32,6 +32,10 @@ Covenant version 1.4.1.
 
 Kivanc Yazan `<kyzn at cpan.org>`
 
+# CONTRIBUTORS
+
+Joelle Maslak `<jmaslak at antelope.net>`
+
 # COPYRIGHT AND LICENSE
 
 This software is copyright (c) 2018 by Kivanc Yazan.
