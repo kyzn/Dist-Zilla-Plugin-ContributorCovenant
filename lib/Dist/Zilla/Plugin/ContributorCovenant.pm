@@ -26,6 +26,10 @@ You can add following lines to your dist.ini as well.
 Note that this plugin will prune other CODE_OF_CONDUCT.md files, to
 avoid multiple CODE_OF_CONDUCT.md preventing the build.
 
+The version of this module will match the version of the Contributor
+Covenant used.  For instance, version 1.004001 will use Contributor
+Covenant version 1.4.1.
+
 =cut
 
 use warnings;
@@ -103,9 +107,9 @@ sub contributor_covenant_template {
 In the interest of fostering an open and welcoming environment, we as
 contributors and maintainers pledge to making participation in our project and
 our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-education, socio-economic status, nationality, personal appearance, race,
-religion, or sexual identity and orientation.
+size, disability, ethnicity, sex characteristics, gender identity and expression,
+level of experience, education, socio-economic status, nationality, personal
+appearance, race, religion, or sexual identity and orientation.
 
 ## Our Standards
 
