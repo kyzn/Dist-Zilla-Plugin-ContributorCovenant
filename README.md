@@ -35,6 +35,7 @@ Kivanc Yazan `<kyzn at cpan.org>`
 # CONTRIBUTORS
 
 Joelle Maslak `<jmaslak at antelope.net>`
+D Ruth Holloway `<ruth at hiruthie.me>`
 
 # COPYRIGHT AND LICENSE
 
