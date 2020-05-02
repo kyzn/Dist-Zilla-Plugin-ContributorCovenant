@@ -248,7 +248,7 @@ D Ruth Holloway C<< <ruth at hiruthie.me> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2018 by Kivanc Yazan.
+This software is copyright (c) 2020 by Kivanc Yazan.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
@@ -257,7 +257,7 @@ the same terms as the Perl 5 programming language system itself.
 
 - This module is based heavily on L<Dist::Zilla::Plugin::Covenant>.
 
-- Covenant text is taken from L<https://www.contributor-covenant.org/version/1/4/code-of-conduct.md>.
+- Covenant text is taken from L<https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct.md>.
 
 =head1 SEE ALSO
 
